@@ -1,0 +1,7 @@
+main: me.firestar311.customentities.CustomEntities
+version: 1.0
+name: CustomEntities
+api-version: 1.20
+load: STARTUP
+commands: 
+  test:
