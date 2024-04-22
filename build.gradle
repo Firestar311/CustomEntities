@@ -1,16 +1,20 @@
 plugins {
     id 'java-library'
-    id 'io.papermc.paperweight.userdev' version '1.5.5'
+    id 'io.papermc.paperweight.userdev' version '1.5.12'
 }
 
 repositories {
     mavenCentral()
+    maven {
+        url = 'https://www.jitpack.io'
+    }
 }
 
 version '1.0-SNAPSHOT'
 
 dependencies {
-    paperweight.paperDevBundle("1.20.2-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.20.4-R0.1-SNAPSHOT")
+    implementation 'com.github.StarDevelopmentLLC:StarLib:1.0.0-alpha.11'
 }
 
 tasks.assemble {
